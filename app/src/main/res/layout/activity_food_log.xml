@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/FoodET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="egg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.73"
+        app:layout_constraintStart_toEndOf="@+id/FoodNameTV"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.205" />
+
+    <Button
+        android:id="@+id/FoodBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <TextView
+        android:id="@+id/FoodNameTV"
+        android:layout_width="112dp"
+        android:layout_height="49dp"
+        android:text="Food: "
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FoodBackButton"
+        app:layout_constraintVertical_bias="0.087" />
+
+    <TextView
+        android:id="@+id/CalorieTV"
+        android:layout_width="132dp"
+        android:layout_height="46dp"
+        android:text="Calories: "
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FoodNameTV"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <TextView
+        android:id="@+id/CarbTV"
+        android:layout_width="112dp"
+        android:layout_height="49dp"
+        android:text="Carbs: "
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CalorieTV"
+        app:layout_constraintVertical_bias="0.082" />
+
+    <TextView
+        android:id="@+id/ProteinTV"
+        android:layout_width="126dp"
+        android:layout_height="46dp"
+        android:text="Proteins: "
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CarbTV"
+        app:layout_constraintVertical_bias="0.096" />
+
+    <TextView
+        android:id="@+id/FatTV"
+        android:layout_width="112dp"
+        android:layout_height="49dp"
+        android:text="Fats: "
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ProteinTV"
+        app:layout_constraintVertical_bias="0.104" />
+
+    <EditText
+        android:id="@+id/CalorieET"
+        android:layout_width="178dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="78"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.281"
+        app:layout_constraintStart_toEndOf="@+id/CalorieTV"
+        app:layout_constraintTop_toBottomOf="@+id/FoodET"
+        app:layout_constraintVertical_bias="0.075" />
+
+    <EditText
+        android:id="@+id/CarbET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint=".6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.692"
+        app:layout_constraintStart_toEndOf="@+id/CarbTV"
+        app:layout_constraintTop_toBottomOf="@+id/CalorieET"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <EditText
+        android:id="@+id/ProteinET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.631"
+        app:layout_constraintStart_toEndOf="@+id/ProteinTV"
+        app:layout_constraintTop_toBottomOf="@+id/CarbET"
+        app:layout_constraintVertical_bias="0.109" />
+
+    <EditText
+        android:id="@+id/FatET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.73"
+        app:layout_constraintStart_toEndOf="@+id/FatTV"
+        app:layout_constraintTop_toBottomOf="@+id/ProteinET"
+        app:layout_constraintVertical_bias="0.105" />
+
+    <Button
+        android:id="@+id/FoodRecordButton"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:text="Record This Entry"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.83" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

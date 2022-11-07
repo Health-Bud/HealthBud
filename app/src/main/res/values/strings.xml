@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">HealthBud</string>
+    <string name="app_name">Health-Bud</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="log_exercise">Log Exercise</string>
+    <string name="log_medicine">Log Medicine</string>
+    <string name="log_food">Log Food</string>
 </resources>

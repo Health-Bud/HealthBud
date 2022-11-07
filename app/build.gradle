@@ -2,7 +2,7 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-parcelize'
-    id 'org.jetbrains.kotlin.plugin.serialization'
+    //id 'org.jetbrains.kotlin.plugin.serialization'
     id 'kotlin-kapt'
 }
 
