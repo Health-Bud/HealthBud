@@ -2,7 +2,6 @@ package com.example.healthbud
 
 import androidx.room.Dao
 import androidx.room.Insert
-import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import kotlinx.coroutines.flow.Flow
 
@@ -11,6 +10,9 @@ import kotlinx.coroutines.flow.Flow
 interface FoodDao {
     @Query("SELECT * FROM food_table")
     fun getAll(): Flow<List<FoodEntity>>
+
+    @Query("SELECT * FROM food_table where date = :queryDate")
+    fun getByDate(queryDate: String): Flow<List<FoodEntity>>
 
     @Insert
     fun insertAll(entries: List<FoodEntity>)

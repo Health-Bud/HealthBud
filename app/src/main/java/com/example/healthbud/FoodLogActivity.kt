@@ -1,6 +1,8 @@
 package com.example.healthbud
 
+import android.annotation.SuppressLint
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
@@ -20,6 +22,7 @@ class FoodLogActivity : AppCompatActivity() {
     private lateinit var backButton: Button
     private lateinit var currentTime: Date
 
+    @SuppressLint("SimpleDateFormat")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_food_log)
@@ -27,6 +30,7 @@ class FoodLogActivity : AppCompatActivity() {
         currentTime = Calendar.getInstance().time
         val dateFormat = SimpleDateFormat("MM/dd/yyyy")
         val output: String = dateFormat.format(currentTime)
+        Log.v("outputDate: ", output )
 
         // Find the views for the screen
         foodET = findViewById(R.id.FoodET)

@@ -23,6 +23,7 @@ class LogFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        print("IN LOG FRAGMENT")
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_log, container, false)
         exerciseLogButton = view.findViewById(R.id.exerciseLogButton)
