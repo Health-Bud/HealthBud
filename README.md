@@ -1,4 +1,4 @@
-# Milestone 1 - Health Bud
+# Milestone 2 - Health Bud
 <!-- We can come up with a name for the app later --> 
 
 Assignment Reference: https://courses.codepath.org/courses/and102/unit/7#!milestones
@@ -37,7 +37,7 @@ Health Bud is a health app that allows users to keep track of their medicine int
 - [x] Users can click a button on the log page to go to a log food/calories 
 - [x] Users can navigate between the dashboard, log, and calendar via a navigation view
 - [x] Users should be able to keep track of what medication they have taken and log the information through the app
-- [x] Users should be able to receive a reminder/notification of when to take medication/log their intake for the day
+- [ ] Users should be able to receive a reminder/notification of when to take medication/log their intake for the day
 - [ ] Users can see when they have previously logged in data for past medications/workouts
 - [ ] Users are able to set how often they need to take a certain medicine
 
