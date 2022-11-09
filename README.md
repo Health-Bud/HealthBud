@@ -1,4 +1,4 @@
-# Milestone 2 - Health Bud
+# Milestone 3 - Health Bud
 <!-- We can come up with a name for the app later --> 
 
 Assignment Reference: https://courses.codepath.org/courses/and102/unit/7#!milestones
