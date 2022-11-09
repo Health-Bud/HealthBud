@@ -28,15 +28,6 @@ class CalendarFragment : Fragment() {
         val calendarView = view.findViewById<CalendarView>(R.id.calendarView)
         val foods = mutableListOf<DisplayFood>()
 
-        Log.v("Oncreateview","Oncreatedview")
-
-        /*
-        calendarView.setOnDateChangeListener(OnDateChangeListener { view, year, month, dayOfMonth ->
-            // add code here
-            Log.v("clicked", "Oncreatedview")
-        })*/
-
-
         calendarView.setOnDateChangeListener { calendarView, year, month, day ->
             Log.v("Day:",day.toString())
             var dayString = day.toString()
@@ -56,18 +47,12 @@ class CalendarFragment : Fragment() {
                             entity.fat
                         )
                     }.also { mappedList ->
-                        Log.v("in ALSO","Oncreatedview")
                         foods.clear()
                         foods.addAll(mappedList)
-                        Log.v("foods length", foods.size.toString())
+                        //Log.v("foods length", foods.size.toString())
                         for (food in foods) {
-                            Log.v("Foods here: ", "")
-                            Log.v("Here", food.food + "");
+                            Log.v("Food: ", food.food + "");
                         }
-                        /*
-                        articles.clear()
-                        articles.addAll(mappedList)
-                        entryAdapter.notifyDataSetChanged()*/
                     }
                 }
             }

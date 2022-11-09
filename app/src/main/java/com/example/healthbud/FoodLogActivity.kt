@@ -30,7 +30,6 @@ class FoodLogActivity : AppCompatActivity() {
         currentTime = Calendar.getInstance().time
         val dateFormat = SimpleDateFormat("MM/dd/yyyy")
         val output: String = dateFormat.format(currentTime)
-        Log.v("outputDate: ", output )
 
         // Find the views for the screen
         foodET = findViewById(R.id.FoodET)
