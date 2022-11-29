@@ -3,14 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/jason/Desktop/health bud 20221107/app/src/main/res/layout/activity_exercise.xml" value="0.264" />
-        <entry key="..\:/Users/jason/Desktop/health bud 20221107/app/src/main/res/layout/activity_medicine_log.xml" value="0.14792299898682879" />
         <entry key="app/src/main/res/layout/activity_exercise.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_food_log.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.17255434782608695" />
         <entry key="app/src/main/res/layout/activity_medicine_log.xml" value="0.24479166666666666" />
+        <entry key="app/src/main/res/layout/activity_recyclerview.xml" value="0.12639311043566362" />
+        <entry key="app/src/main/res/layout/detail_food.xml" value="0.20208333333333334" />
         <entry key="app/src/main/res/layout/fragment_calendar.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_log.xml" value="0.24479166666666666" />
+        <entry key="app/src/main/res/layout/item.xml" value="0.549040841365206" />
+        <entry key="app/src/main/res/layout/item_food.xml" value="0.203125" />
         <entry key="app/src/main/res/menu/bottom_navigation_menu.xml" value="0.1" />
       </map>
     </option>
