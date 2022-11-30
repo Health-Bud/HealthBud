@@ -1,5 +1,6 @@
 package com.example.healthbud
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -9,7 +10,9 @@ import android.widget.CalendarView
 import android.widget.CalendarView.OnDateChangeListener
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
+import com.google.gson.Gson
 import kotlinx.coroutines.launch
+import java.io.Serializable
 
 private const val TAG = "CalendarFragment"
 
@@ -49,13 +52,16 @@ class CalendarFragment : Fragment() {
                     }.also { mappedList ->
                         foods.clear()
                         foods.addAll(mappedList)
-                        //Log.v("foods length", foods.size.toString())
-                        for (food in foods) {
-                            Log.v("Food: ", food.food + "");
-                        }
+                        val obj = ArrayList<DisplayFood>()
+                        obj.addAll(foods)
+                        var json = Gson().toJson(obj)
+                        val intent = Intent(view?.context, FoodDetailActivity::class.java)
+                        intent.putExtra("Bundle", json)
+                        startActivity(intent)
                     }
                 }
             }
+
         }
         // Inflate the layout for this fragment
         return view //inflater.inflate(R.layout.fragment_calendar, container, false)

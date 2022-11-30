@@ -26,6 +26,10 @@
         <!-- Food Log Activity -->
         <activity android:name=".FoodLogActivity"
             android:exported="true" />
+        <!-- Food Detail Activity -->
+        <activity android:name=".FoodDetailActivity"
+            android:exported="true" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
